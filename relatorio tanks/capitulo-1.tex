@@ -1,0 +1,96 @@
+\chapter{Introdução}
+\label{chap:intro}
+\section{Considerações iniciais}
+\label{sec:PBL} 
+Este projeto foca-se na elaboração do jogo \textit{TankUP} para dois jogadores, multijogador, a partir da plataforma móvel Android. O objetivo do jogo consiste em destruir as viaturas do adversário, tentando adivinhar as suas posições e os seus respectivos  padrões de colocação.\\
+
+O jogo teve como base o histórico “Batalha Naval”, contudo foram introduzidas algumas alterações de modo a tornar a experiência mais única e simples.
+Este projeto não pretende a criação de um jogo com mecânicas, design ou gráficos de um jogo de topo atual, mas sim a exposição do estudo efetuado sobre como realizar um projeto utilizando tecnologias com as quais o autor não tinha qualquer experiência.\\
+Em suma, o presente relatório focar-se-á no processo de aprendizagem e desenvolvimento do projeto, sendo encorajada a utilização da aplicação de modo a interagir mais dinamicamente com o relatório.
+
+
+
+\section{Enquadramento do tema}
+\label{sec:AIL}
+Nesta secção serão expostas as abordagens iniciais em relação ao projeto no seu todo e às suas várias etapas.
+
+A primeira abordagem ao projeto é relativa à pesquisa, onde foi estudado o ciclo normal de desenvolvimento de um videojogo e foram exploradas as ferramentas disponíveis neste mercado. Devido à complexidade do projeto, este envolve a maior parte do ciclo de desenvolvimento normal, sendo este o conceito, design, mecânicas, desenvolvimento e teste. \\ 
+
+Servindo de base a proposta de projeto e tendo em conta este ciclo, começou-se por definir uma ideia mais concreta do pretendido. Depois, encontrar as ferramentas mais indicadas de utilizar em cada etapa. Isto foi conseguido pesquisando por vantagens que umas plataformas tinham em relação às outras e comparando trabalhos já desenvolvidos por autores mais experientes na área, usando fóruns e palestras disponibilizadas por vários estúdios de produção, como o \href{https://unite.unity.com/}{Unite}.
+
+Depois de definir as ferramentas a utilizar, foi estudada a melhor maneira de implementar o jogo, definindo a sua arquitetura de rede, as suas características e funcionalidades base e que tipo de conteúdo poderia ser criado para este. 
+Superada esta fase, houve o processo de aprendizagem das ferramentas e o desenvolvimento dos conteúdos gráficos. Foi então desenvolvido o jogo em si e testado, sendo que o desenvolvimento deste relatório foi acompanhando todo o processo.
+
+
+
+
+\section{Motivação}
+\label{sec:DP}
+O objectivo desta aplicação consiste na aprendizagem e estudo das ferramentas utilizadas na indústria dos videojogos, dado o meu interesse pela área em questão. Dito isto, o desenvolvimento da aplicação serviu o seu propósito, sendo que, para a sua produção, foram utilizadas duas ferramentas frequentemente utilizadas na indústria - \emph{Blender} e \emph{Unity} - e foram aprofundados conhecimentos de ligações de rede, programação orientada a objetos, planeamento e de engenharia de \textit{software}. Foram também aprendidas novas técnicas e áreas da criação de videojogos como a modelação, animação, construção de cena e design de mecânicas de jogo.
+
+Durante o desenvolvimento da aplicação, tornou-se claro que esta tinha um interesse que ia para além do espetro académico, no sentido em que poderia ser aproveitada para um projeto a ser inserido na indústria, ou seja, proceder à publicação do jogo numa plataforma de venda \textit{online} como a \emph{Play Store} da \emph{Google}. 
+Mesmo não aplicando o conteúdo da aplicação para a construção do jogo, as suas capacidades poderiam ser aplicadas para outros projetos interessantes, como se pode verificar no \autoref{chap:futuroC}.
+
+\section{Divisão do projeto}
+\label{sec:DPL}
+Para atingir uma mecânica ótima do desenvolvimento do projeto tornou-se de importante interesse a divisão do mesmo em várias fases e dentro destas várias tarefas, enumeradas da seguinte forma:
+\begin{enumerate}
+\item Definição do conceito base do jogo.\\
+
+\item Avaliação das plataformas mais viáveis para a realização do projeto
+\begin{enumerate}
+\item Pesquisa de ferramentas de desenho e modelação.
+\item Pesquisa de ferramentas de física e motor de jogo.\\
+\end{enumerate}
+
+
+\item Escolha da plataforma e arquitetura
+\begin{enumerate}
+\item Pesquisa sobre as diferentes escolhas de arquitetura disponíveis.
+\item Pesquisa sobre as vantagens e limitações das ferramentas escolhidas ao implementar a arquitetura escolhida.
+\item Escolha das ferramentas e arquitetura.\\
+\end{enumerate}
+
+\item Criação dos conteúdos do jogo
+\begin{enumerate}
+\item Aprendizagem da ferramenta \textit{Blender}.
+\item Desenvolvimento dos modelos e vídeos a utilizar.\\
+\end{enumerate}
+
+\item Desenvolvimento do jogo
+\begin{enumerate}
+\item Aprendizagem da ferramenta \textit{Unity}.
+\item Desenvolvimento das mecânicas e código do jogo.\\
+\end{enumerate}
+
+\item Fase de testes e refinação
+\begin{enumerate}
+\item Testes do jogo em diferentes máquinas e condições de rede.
+\item Correção de erros e melhoramentos.\\
+\end{enumerate}
+
+\item Escrita de relatório.
+
+\end{enumerate}
+
+\clearpage
+
+\section{Estrutura e organização do relatório}
+\label{sec:ODL}
+
+Este documento encontra-se estruturado da seguinte forma:
+\begin{enumerate}
+\item \autoref{chap:resumo} -- \textbf{Resumo} -- apresentação, de uma forma muito resumida, do tema, objetivos e abordagem seguida.
+
+\item \autoref{chap:intro} -- \textbf{Introdução} -- enquadramento e  explicação do problema e a motivação, assim como, de grosso modo, a descrição da abordagem para a sua resolução.  De forma numerada, descreve-se a estrutura do relatório.
+
+\item \autoref{chap:relacionados} -- \textbf{Estado de Arte} -- expostos trabalhos de caráter semelhante, servindo de inspiração ao desenvolver a aplicação.
+
+\item \autoref{chap:tecnologias_ferramentas_utilizadas} -- \textbf{Tecnologias e Ferramentas Utilizadas} --  são abordadas as tecnologias e ferramentas utilizadas para desenvolver a aplicação.
+
+\item \autoref{chap:desen} -- \textbf{Desenvolvimento} -- retrata-se todo o processo de desenvolvimento pela qual a aplicação passou. Descreve-se os detalhes de código e do projeto em geral, de maneira a fornecer uma ideia mais esclarecedora da estrutura base responsável para o funcionamento da aplicação. 
+
+\item \autoref{chap:futuroC} -- \textbf{Conclusões e Trabalho Futuro} -- capítulo onde são enunciadas diferentes maneiras de melhorar o jogo, adicionando ou melhorando diferentes aspetos deste. Também é feito um resumo do que foi abordado anteriormente e são referidas algumas considerações sobre o projeto em si.
+
+\end{enumerate}
+

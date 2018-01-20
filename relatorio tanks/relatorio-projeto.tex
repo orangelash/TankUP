@@ -1,0 +1,144 @@
+\documentclass[titlepage,12pt,a4paper,times]{book}
+\usepackage{soul}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+% substituir linha anteior por 
+% \usepackage[english]{babel} 
+% se o relatório for escrito na língua inglesa.
+\usepackage{makeidx}
+\usepackage{xspace}
+\usepackage{graphicx,color,times}
+\usepackage{fancyhdr}
+% \usepackage{pxfonts}
+% \usepackage{times}
+% \usepackage{mathptm}
+% \usepackage{amssymb}
+% \usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage[printonlyused]{acronym}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{listing}
+\usepackage{tocbibind}
+\usepackage{wrapfig}
+\usepackage{natbib}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+
+
+% \usepackage{glossaries}
+% \makeglossaries
+
+
+\renewcommand{\ttdefault}{phv}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} \fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt}
+\setlength{\marginparsep}{0cm}
+\setlength{\marginparwidth}{0cm}
+\setlength{\marginparpush}{0cm}
+\addtolength{\hoffset}{-1.0cm}
+\addtolength{\oddsidemargin}{\evensidemargin}
+\addtolength{\oddsidemargin}{0.5cm}
+\addtolength{\evensidemargin}{-0.5cm}
+
+
+% NEW COLORS
+\definecolor{dark}{gray}{0.25}
+\definecolor{lgray}{gray}{0.9}
+\definecolor{dkblue}{rgb}{0,0.13,0.4}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  language=java,                    basicstyle=\footnotesize,
+  numbers=none,                  numberstyle=\tiny\color{gray}, 
+  stepnumber=1,                  numbersep=5pt,
+  backgroundcolor=\color{white}, showspaces=false,
+  showstringspaces=false,        showtabs=false,
+  frame=single,                  rulecolor=\color{black},
+  tabsize=2,                     captionpos=b,
+  breaklines=true,               breakatwhitespace=false,
+  title=\lstname,                keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},  stringstyle=\color{mauve},
+  escapeinside={\%*}{*)},        morekeywords={*},
+  belowskip=0cm
+}
+
+
+
+\begin{document}
+
+\include{capa}
+
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+
+\frontmatter
+
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+
+
+\tableofcontents
+
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+
+\listoffigures
+
+% Se não existirem tabelas, comentar as seguintes linhas
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+\listoftables
+
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+\include{acronimos}
+
+% \clearpage{\pagestyle{empty}\cleardoublepage}
+% \include{glossario}
+\include{agradecimentos}
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+
+
+\mainmatter
+\include{resumo}
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+\include{capitulo-1}
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+\include{capitulo-2}
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+\include{capitulo-3}
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+\include{capitulo-4}
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+\include{capitulo-7}
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+
+
+
+% SE EXISTIREM APENDICES, DESCOMENTAR O QUE ESTÁ EM BAIXO
+% \appendix
+% \include{apendice1}
+% \clearpage{\pagestyle{empty}\cleardoublepage}
+% \include{continuacao}
+% \clearpage{\pagestyle{empty}\cleardoublepage}
+% \include{apendice2}
+% \clearpage{\pagestyle{empty}\cleardoublepage}
+% \include{apendice3}
+% \clearpage{\pagestyle{empty}\cleardoublepage}
+
+\backmatter
+\include{bibliografia}
+\include{bibliography}
+
+
+\end{document}
